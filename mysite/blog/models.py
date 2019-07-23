@@ -8,3 +8,6 @@ class Post(models.Model):
     pub_date = models.DateTimeField('publication date')
     body = models.TextField()
     image = models.ImageField(upload_to='images/')
+
+    def __str__(self):
+        return self.title

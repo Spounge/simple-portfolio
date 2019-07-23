@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Home</title>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+			<a class="navbar-brand" href="#">Nelson ANGELIQUE</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="navbar-toggler-icon">&nbsp;</i>
+			</button> <!-- .navbar-toggler -->
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+					<a class="nav-item nav-link" href="#">Github</a>
+					<a class="nav-item nav-link" href="#">Resume</a>
+					<a class="nav-item nav-link active" href="#">Blog</a>
+				</div> <!-- .navbar-nav -->
+			</div> <!-- .collapse -->
+		</nav> <!-- .navbar -->
+	</header>
+	<main role="main" class="container">
+		<section class="mb-5">
+			<h1 class="text-center m-3">{{ post.title }}</h1>
+			<div class="text-center">
+				<img class="img-fluid w-50 mt-3 mb-5" src="{{ post.image.url }}" height="400" alt="post thumbnail" role="image">
+			</div>
+			<p class="text-secondary">{{ post.pub_date }}</p>
+			<p class="">{{ post.body }}</p>
+		</section>
+	</main>
+	<footer class="text-muted">
+		<div class="container">
+			<a class="float-right badge badge-dark" href="#">Back to top</a>
+			<p class="text-center">© are for neckbearded, {% now 'Y' %}.</p>
+		</div> <!-- .container -->
+	</footer>
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+	<!-- Pooper.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+	<!-- Bootstrap core JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
