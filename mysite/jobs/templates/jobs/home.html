@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Home</title>
 	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
 	<style>
 		.bd-placeholder-img {
 			font-size: 1.125rem;
@@ -26,15 +28,15 @@
 <body>
   <header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-			<a class="navbar-brand" href="#">Nelson ANGELIQUE</a>
+			<a class="navbar-brand" href="{% url 'home' %}">Nelson ANGELIQUE</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="navbar-toggler-icon">&nbsp;</i>
 			</button> <!-- .navbar-toggler -->
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ml-auto">
-					<a class="nav-item nav-link text-light" href="#">Github</a>
-					<a class="nav-item nav-link text-light" href="#">Resume</a>
-					<a class="nav-item nav-link text-light" href="#">Blog</a>
+					<a class="nav-item nav-link" href="//github.com/Spounge">Github</a>
+					<a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
+					<a class="nav-item nav-link" href="{% url 'index' %}">Blog</a>
 				</div> <!-- .navbar-nav -->
 			</div> <!-- .collapse -->
 		</nav> <!-- .navbar -->
@@ -44,6 +46,8 @@
 			<div class="container">
 				<h1 class="jumbotron-heading">Hi, I'm Nelson</h1>
 				<p class="lead text-dark">My name is Nelson. I'm a Django developer.</p>
+				<img class="img-fluid w-25 mb-3" src="{% static 'laughing_man.jpg' %}" alt="picture of me" role="image">
+				<br>
 				<a href="mailto:nelson.angelique@epitech.eu" class="btn btn-dark my-2">Email Me</a>
 			</div> <!-- .container -->
 		</section> <!-- .jumbotron -->
@@ -71,10 +75,10 @@
 		</div> <!-- .container -->
 	</footer>
 	<!-- JQuery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
 	<!-- Pooper.js -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
 	<!-- Bootstrap core JS -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
