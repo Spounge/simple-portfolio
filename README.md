@@ -41,7 +41,7 @@ To run locally
 
 5. Create a super user by running the command `./mysite/manage.py createsuperuser`
 
-6. You can now open the application and access the admin site to add Posts and Jobs
+6. You can now run `./mysite/manage.py runserver`, open the site at `127.0.0.1:8000` and access the admin site to add Posts and Jobs
 
 
 # Screenshots
