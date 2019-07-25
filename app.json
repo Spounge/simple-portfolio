@@ -1,0 +1,7 @@
+{
+  "name": "simple portfolio",
+  "description": "A simple portfolio and blog using the Django web framework.",
+  "repository": "https://github.com/Spounge/simple-portfolio",
+  "keywords": ["python", "django"],
+  "addons": ["heroku-postgresql"]
+}
