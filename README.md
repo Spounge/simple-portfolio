@@ -45,3 +45,7 @@ To run locally
 
 
 # Screenshots
+
+![jobs_screen](https://user-images.githubusercontent.com/30945808/61883758-53f37800-aefb-11e9-9433-094b533dcf08.png)
+
+![blog_screen](https://user-images.githubusercontent.com/30945808/61883792-5e157680-aefb-11e9-8aa9-4a297c579b00.png)
